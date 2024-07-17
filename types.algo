@@ -1,0 +1,19 @@
+ALGORITHM types
+VAR
+    i: INTEGER :=26;
+    f: float :=4.56;
+    c: char :='c';
+    s: string :="str";
+    b: boolean := true;
+BEGIN
+    // this is a single line comment
+    /*
+    this is a multi line comment
+    */
+    f:=i; // correct
+    i:=f; //wrong
+    // we cannot mix types
+    f:=c; // wrong
+    s:=c; // correct
+    b:=i; // wrong
+END
