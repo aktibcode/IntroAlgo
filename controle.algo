@@ -1,0 +1,40 @@
+----------------------------------------------------------------
+STRUCTURE DE CONTROLE SWITCH
+----------------------------------------------------------------
+SWITCH (season) DO
+    case 1 : Write("10h00 to 16h00"); BREAK; // set_instructions
+    case 2 : Write("10h00 to 18h00"); BREAK; // set_instructions
+    case 3 : Write("10h00 to 20h00"); BREAK; // set_instructions
+    case 4 : Write("10h00 to 16h00"); BREAK; // set_instructions
+    default : Write("10h00 to 16h00")        // set_instructions
+END_SWITCH
+
+----------------------------------------------------------------
+STRUCTURE DE CONTROLE IF ELSE 
+----------------------------------------------------------------
+
+// 1er écriture
+ticket_price :=20;
+IF (age <=16) THEN 
+    ticket_price :=10;
+END_IF
+
+// 2ème écriture
+IF (age <=16) THEN 
+    ticket_price :=10;
+ELSE
+    ticket_price :=20;
+END_IF
+
+
+// Autre problematique du cas
+IF (age <=10) THEN 
+    ticket_price :=4;
+ELSE_IF (age <=16) THEN
+    ticket_price :=10;
+ELSE
+    ticket_price :=20;    
+END_IF
+
+
+

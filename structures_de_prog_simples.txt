@@ -1,0 +1,56 @@
+Types de traitement :
+
+- Traitement séquentiel
+- Traitement de selection
+- Traitement itératif
+
+
+----------------------------------------------------------------
+EXECUTION D'UNE SEQUENCE D'INTRUCTIONS
+----------------------------------------------------------------
+
+Il existe trois éléments à utiliser lors de la conception d'un algorithme : Le sequençage, la selection et l'itération.
+
+Prenons un exemple d'alogorithme conçu pour dessiner un carré en 07 étapes:
+- tracer une ligne de 3cm
+- Tourner à gauche de 90 degrés
+- Tracer une ligne de 3cm
+- Tourner à gauche de 90 degrés
+- Tracer une ligne de 3cm
+- Tourner à gauche de 90 degrés
+- Tracer une ligne de 3cm
+
+Maintenant, inversons les deux derniéres intructions, l'algorithme ressemblera à ceci:
+- tracer une ligne de 3cm
+- Tourner à gauche de 90 degrés
+- Tracer une ligne de 3cm
+- Tourner à gauche de 90 degrés
+- Tracer une ligne de 3cm
+- Tracer une ligne de 3cm
+- Tourner à gauche de 90 degrés
+
+
+----------------------------------------------------------------
+INSTRUCTIONS ARITHMETIQUES
+----------------------------------------------------------------
+
+    Operations arithmetique 
+        Addition ----------------------------- outcome := a + b
+        Soustraction ------------------------- outcome := a - b
+        Multiplication ----------------------- outcome := a * b
+        Division ----------------------------- outcome := a / b
+        Modulo (reste de la division) -------- outcome := a % b
+
+
+----------------------------------------------------------------
+INSTRUCTIONS LOGIQUES
+----------------------------------------------------------------
+
+    Opération logique
+        Not --------------------------------- outcome := not a 
+        Or ---------------------------------- outcome := a or b 
+        And --------------------------------- outcome := a and b 
+        Equals ------------------------------ outcome := a = b
+        Not Equals -------------------------- outcome := a <> b 
+        Greater than / Greater than or equal - outcome := a > b / outcome:= a >= b
+        Less than / Less than or equal - outcome := a < b / outcome:= a <= b

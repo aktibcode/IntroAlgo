@@ -1,0 +1,52 @@
+PROCEDURE swap(VAR xp, VAR yp : INTEGER)
+VAR
+    tmp:INTEGER
+BEGIN
+    tmp:=xp;
+    xp:=yp;
+    yp:=tmp;
+END
+
+
+/*** Bublle sort ***/
+/**
+    ALGORITHME DU TRI SIMPLE ET DU TRI A BULLES
+*/
+PROCEDURE bubble_sort(VAR tab:ARRAY_OF INTEGER)
+VAR
+    i, j, n: INTEGER;
+BEGIN
+    n := tab.length;
+    FOR i from 0 to n-1 step 1 DO
+        // Last i elements are already in place
+        FOR J from 0 to n-i-1 step 1 DO
+            IF (tab[j] > tab[j+1]) THEN
+                swap(tab[j], tab[j+1])
+            END_IF
+        END_FOR 
+    END_FOR    
+END
+
+/**
+    selection sort
+*/
+
+PROCEDURE selection_sort(VAR tab:ARRAY_OF INTEGER)
+VAR
+    i,j,min_idx,n : INTEGER;
+BEGIN
+    n:= tab.length;
+    // one by one move boundary of sub-array
+    FOR i FROM 0 TO n-2 STEP 1 DO
+        min_idx :=i;
+        FOR j FROM i TO n-i-2 STEP 1  DO
+            IF (tab[j]<tab[min_idx]) THEN
+                min_idx:= j;
+            END_IF
+        END_FOR
+    
+    swap(arr[min_idx], arr[i])
+    END_FOR
+END
+
+
